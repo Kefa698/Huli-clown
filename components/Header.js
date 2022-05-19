@@ -24,6 +24,7 @@ function Header() {
 			<Image
 				className="object-contain"
 				src="https://rb.gy/rkirix"
+				alt="image"
 				width={150}
 				height={80}
 			/>
