@@ -28,4 +28,8 @@ export default {
 		title: 'Upcoming',
 		url: `/movie/upcoming?api_key=${API_KEY}&language=en-US`,
 	},
+	fetchPopular: {
+		title: 'Popular',
+		url: `/movie/popular?api_key=${API_KEY}&language=en-US&page=1`,
+	},
 };
