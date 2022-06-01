@@ -1,8 +1,8 @@
-/* eslint-disable react/display-name */
 import React from 'react';
 import Image from 'next/image';
 import { ThumbUpIcon } from '@heroicons/react/outline';
 import { forwardRef } from 'react';
+// eslint-disable-next-line react/display-name
 const Thumbnail = forwardRef(({ result }, ref) => {
 	const BASE_URL = 'https://image.tmdb.org/t/p/original/';
 	return (
@@ -18,7 +18,6 @@ const Thumbnail = forwardRef(({ result }, ref) => {
 				}
 				height={1080}
 				width={1920}
-				alt=''
 			/>
 			<div className="p-2">
 				<p className="max-w-md truncate">{result.overview}</p>
