@@ -1,14 +1,13 @@
-/* eslint-disable react/display-name */
 import React from 'react';
 import Image from 'next/image';
 import { ThumbUpIcon } from '@heroicons/react/outline';
 import { forwardRef } from 'react';
-
-const Thumbnail = forwardRef(({ result }, ref) => {
+// eslint-disable-next-line react/display-name
+const Thumbnail = forwardRef(({ result }) => {
 	const BASE_URL = 'https://image.tmdb.org/t/p/original/';
 	return (
 		<div
-			ref={ref}
+			
 			className="p-2 transition duration-100 ease-in transform cursor-pointer group sm:hover:scale-105 hover:z-50"
 		>
 			<Image
