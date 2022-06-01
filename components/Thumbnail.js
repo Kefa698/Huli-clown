@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import Image from 'next/image';
 import { ThumbUpIcon } from '@heroicons/react/outline';
@@ -7,7 +8,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
 	return (
 		<div
 			ref={ref}
-			className="p-2 transition duration-100 ease-in transform group cursor-pointer sm:hover:scale-105 hover:z-50"
+			className="p-2 transition duration-100 ease-in transform cursor-pointer group sm:hover:scale-105 hover:z-50"
 		>
 			<Image
 				layout="responsive"
@@ -17,9 +18,10 @@ const Thumbnail = forwardRef(({ result }, ref) => {
 				}
 				height={1080}
 				width={1920}
+				alt=''
 			/>
 			<div className="p-2">
-				<p className="truncate max-w-md">{result.overview}</p>
+				<p className="max-w-md truncate">{result.overview}</p>
 				<h2 className="mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">
 					{result.title || result.original_name}
 				</h2>
